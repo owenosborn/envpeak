@@ -1,0 +1,12 @@
+#N canvas 1326 508 450 300 10;
+#X floatatom 106 160 5 0 0 0 - - -, f 5;
+#X obj 285 95 envpeak~;
+#X floatatom 156 136 5 0 0 0 - - -, f 5;
+#X obj 97 63 sig~ 0.5;
+#X obj 166 174 print;
+#X obj 97 96 envpeak~ 4096;
+#X floatatom 86 19 5 0 0 0 - - -, f 5;
+#X connect 3 0 5 0;
+#X connect 5 0 0 0;
+#X connect 5 1 2 0;
+#X connect 6 0 3 0;
